@@ -1,0 +1,66 @@
+# 🚀 GIT + PULL REQUEST (STEP-BY-STEP)
+
+# STEP 1: Open your project folder in VS Code
+
+# STEP 2: Create a file
+echo "<h1>Hello World</h1>" > index.html
+
+# STEP 3: Initialize Git (only once)
+git init
+
+# STEP 4: Add and Commit
+git add .
+git commit -m "first commit"
+
+# STEP 5: Connect to GitHub repository
+git remote add origin https://github.com/pjjj666/hehehe.git
+
+# STEP 6: Push to GitHub (main branch)
+git branch -m main
+git push -u origin main
+
+# STEP 7: Create a new branch
+git checkout -b feature1
+
+# STEP 8: Make changes (edit file or use below)
+echo "<p>This is a new change</p>" >> index.html
+
+# STEP 9: Add and Commit changes
+git add .
+git commit -m "added new change"
+
+# STEP 10: Push new branch to GitHub
+git push origin feature1
+
+# STEP 11: Create Pull Request (on GitHub website)
+# Go to: https://github.com/pjjj666/hehehe
+# Click: "Compare & pull request"
+# Select:
+#   Base: main
+#   Compare: feature1
+# Click: "Create Pull Request"
+
+# STEP 12: Merge Pull Request
+# Click: "Merge Pull Request"
+# Done 🎉
+
+
+
+🟢 STEP 10: Create Pull Request (VERY IMPORTANT)
+
+Go to your repo:
+👉 GitHub
+
+Then:
+
+* Click Compare & Pull Request
+* Base: main
+* Compare: feature1
+* Click Create Pull Request
+
+⸻
+
+🟢 STEP 11: Merge PR
+
+* Click Merge Pull Request
+* Done 🎉
