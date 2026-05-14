@@ -1,0 +1,52 @@
+# 1️⃣ Setup Git (once)
+git --version                            # check git installed
+git config --global user.name "Your Name"  # set username
+git config --global user.email "you@example.com"  # set email
+
+# 2️⃣ Clone repo
+git clone <repo-url>                     # copy repo from GitHub
+cd <repo-folder>                         # go into repo folder
+
+# 3️⃣ Create a branch
+git checkout -b branch-name              # make a new branch for changes
+
+# 4️⃣ Make changes and save
+git add .                                # stage all changes
+git commit -m "your message"             # commit changes
+
+# 5️⃣ Push branch to GitHub
+git push origin branch-name              # upload branch
+
+# 6️⃣ Pull latest main updates
+git pull origin main                      # get latest main branch
+
+# 7️⃣ Merge branch into main
+git checkout main                         # switch to main
+git pull origin main                       # update main locally
+git merge branch-name                      # merge your branch
+git push origin main                       # push merged main
+
+# 8️⃣ Delete branch
+git branch -d branch-name                  # delete local branch
+git push origin --delete branch-name       # delete branch on GitHub
+
+# 9️⃣ Fork someone else's repo
+# Step 1: Fork on GitHub website
+# Step 2: Clone your fork
+git clone https://github.com/yourname/repo.git
+cd repo
+git checkout -b my-change                 # create branch
+git add .
+git commit -m "update"                     # commit changes
+git push origin my-change                  # push branch
+# Step 3: Create Pull Request on GitHub to merge to original repo
+
+# 🔍 Check branches
+git branch                                 # local branches
+git branch -r                               # remote branches
+
+# 🧹 Clean deleted remote branches
+git fetch --prune                           # remove stale remote branches
+
+# ✅ Quick workflow
+# clone → branch → add → commit → push → PR → merge
