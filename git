@@ -17,6 +17,10 @@ git commit -m "your message"             # commit changes
 # 5️⃣ Push branch to GitHub
 git push origin branch-name              # upload branch
 
+🔹 1. Create branch (use a REAL name)
+git checkout -b my-branch(so tht another branch is crewated
+
+
 # 6️⃣ Pull latest main updates
 git pull origin main                      # get latest main branch
 
